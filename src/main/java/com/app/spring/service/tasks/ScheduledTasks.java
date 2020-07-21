@@ -14,7 +14,7 @@ public class ScheduledTasks {
 //    1800000
     @Scheduled(fixedRate = 1799950)
     public void pingTo() {
-        var url = "https://google.com";
+        var url = "https://spring-file-manager.herokuapp.com/login";
         try {
             var result  = getStatus(url);
             System.out.println(result);
