@@ -12,7 +12,7 @@ import java.net.URL;
 public class ScheduledTasks {
     private static final Logger logger = LoggerFactory.getLogger(ScheduledTasks.class);
 //    1800000
-    @Scheduled(cron = "14,44 7-23 ? * * *")
+    @Scheduled(cron = "0 14,44 7-23 * * *")
     public void pingTo() {
         var url = "https://spring-file-manager.herokuapp.com/login";
         try {
